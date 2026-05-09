@@ -403,7 +403,7 @@
             noBtn.addEventListener('mouseenter', function() {
                 moveNoButton();
                 // Change message immediately
-                currentMessageIndex = (currentMessageIndex + 1) % sorryMessages.length;
+                currentMessageIndex = Math.floor(Math.random() * sorryMessages.length);
                 mainText.innerHTML = sorryMessages[currentMessageIndex];
                 mainText.classList.add('shake');
                 setTimeout(() => mainText.classList.remove('shake'), 500);
@@ -427,9 +427,8 @@
             moveNoButton();
             
             // Change message immediately
-            currentMessageIndex = (currentMessageIndex + 1) % sorryMessages.length;
+            currentMessageIndex = Math.floor(Math.random() * sorryMessages.length);
             mainText.innerHTML = sorryMessages[currentMessageIndex];
-            
             mainText.classList.add('shake');
             setTimeout(() => mainText.classList.remove('shake'), 500);
 
