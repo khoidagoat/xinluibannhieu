@@ -288,20 +288,18 @@
 
         const sorryMessages = [
             "Tui xin lỗi b nhiều ❤️<br>Tha thứ cho tui đi 🥺",
-            "Tui hứa sẽ hong bỏ bạn nựa 😢💕",
-            "You mean the world to me 🌍💖",
-            "Tui hong ngừng suy nghĩ về tội lỗi cụa tui được 😭",
-            "Please give me another chance 🙏❤️",
+            "Tui hứa sẽ hong bỏ b nựa 💯",
+            "Tui hong ngừng suy nghĩ về b được 😭",
+            "Hãy cho t cơ hội nx 🙏",
             "I'll do anything to make it up to you 💝",
-            "You're the most important person to me 🥰",
+            "B gấc qtrong vs t đấy❗️🥺",
             "Tui xin lỗi vì đã là một thg tồi😔",
-            "Life isn't the same without your smile 😢💖",
-            "I promise to be better for you 🌟❤️",
-            "Forgive me please? I'll buy you ice cream 🍦💕",
-            "I'm so so so sorry baby 😭❤️",
-            "Bạn Mai xinh nhất thế giới lun🌹💖",
+            "Mai đừng bùn nx nha (nếu có) 🥹",
+            "Meo dth lm 🌟🐈",
+            "Xin lỗi vì t bị ngu 😭",
+            "B Mai xinh nhất tg hãy tha lỗi cho t🌹🌍",
             "Pretty please with a cherry on top? 🍒🥺",
-            "Tui hứa sẽ không lm b thất vọng nựa 🙏❤️"
+            "Tui hứa sẽ không lm b thất vọng nựa 🙏"
         ];
 
         let currentMessageIndex = 0;
@@ -322,7 +320,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.className = 'heart';
-            heart.textContent = ['❤️', '💖', '💕', '💗', '💝', '🥰', '😍'][Math.floor(Math.random() * 7)];
+            heart.textContent = ['😭', '💖', '🙏', '🐈', '💝', '🥰', '😍'][Math.floor(Math.random() * 7)];
             heart.style.left = Math.random() * window.innerWidth + 'px';
             heart.style.top = window.innerHeight + 'px';
             document.body.appendChild(heart);
@@ -406,11 +404,11 @@
                 setTimeout(() => mainText.classList.remove('shake'), 500);
                 
                 if (noClickCount <= 5) {
-                    clickCount.innerHTML = `Come on... just click YES! 🥺 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `... bấm YES đi (không cho chọn NO đâu)! 🥺 (Attempts: ${noClickCount})`;
                 } else if (noClickCount <= 10) {
-                    clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `Xin đấy, yes đi ma! 😭 (Attempts: ${noClickCount})`;
                 } else {
-                    clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `B kh bấm no thì đừng hòng về! 💪 (Attempts: ${noClickCount})`;
                 }
                 
                 createHeart();
@@ -431,11 +429,11 @@
             setTimeout(() => mainText.classList.remove('shake'), 500);
 
             if (noClickCount <= 5) {
-                clickCount.innerHTML = `Come on... just click YES! 🥺 (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `... bấm YES đi (không cho chọn NO đâu)! 🥺 (Attempts: ${noClickCount})`;
             } else if (noClickCount <= 10) {
-                clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `Xin đấy, yes đi ma! 😭 (Attempts: ${noClickCount})`;
             } else {
-                clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `B kh bấm no thì đừng hòng về! 💪 (Attempts: ${noClickCount})`;
             }
 
             createHeart();
@@ -443,10 +441,10 @@
 
         // Handle Yes button click
         yesBtn.addEventListener('click', function() {
-            mainText.innerHTML = "Yay! You forgave me! 😍💖🥳";
-            emojiContainer.innerHTML = "😊❤️💃🎉✨🥰💕🌟🎊💖🌹😘";
+            mainText.innerHTML = "Yay! b tha thứ t rồi! 😍🥳";
+            emojiContainer.innerHTML = "😊💥💃🎉✨🥰💕🌟🎊💖🌹😘";
             emojiContainer.classList.remove('hidden');
-            clickCount.innerHTML = "I LOVE YOU SO MUCH! ❤️❤️❤️";
+            clickCount.innerHTML = "T cảm ơn b nhiu 😭💯🥹🥺😭🙏❗️";
             buttonsContainer.style.display = 'none';
 
             for (let i = 0; i < 30; i++) {
